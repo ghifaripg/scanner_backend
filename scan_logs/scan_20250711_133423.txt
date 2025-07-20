@@ -1,0 +1,37 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Documents\\Uni\\FinPro\\high_entropy.exe",
+    "size": 20000,
+    "md5": "335cbda8a5c19dc2c6c8b9d1825b90ab",
+    "sha1": "d624c44e94610626dc21bda52146755aa645e06c",
+    "sha256": "190b7a354766b9d43176da97257e59b5c2833290be97482303060985e3bdddf8",
+    "file_type": "Unknown",
+    "strings_found": [
+      "VXhC",
+      "EV @",
+      "o\"o6",
+      "(.{2",
+      "H9f5",
+      "-a1F.]r",
+      "Dz0\"",
+      "q]?d",
+      "$\\A8",
+      "CSd$"
+    ]
+  },
+  "verdicts": [
+    "High non-ASCII byte ratio"
+  ],
+  "indicators": [
+    {
+      "type": "non_ascii_ratio",
+      "value": 0.5
+    },
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: Hash not found."
+    }
+  ],
+  "threat_score": 10,
+  "classification": "Safe"
+}

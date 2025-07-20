@@ -1,0 +1,44 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Downloads\\Autodesk_AutoCAD_2025_1_1_en-US_setup_webinstall.exe",
+    "size": 30090440,
+    "md5": "f83e45bff3104d88361e65611fd3052c",
+    "sha1": "368cb00cc2b5c3e24943451f4f7b32661dbde14c",
+    "sha256": "b9fe41d1024e0ead4d37c5e02883c668f0e0b28018b5ebb1b604d067c6cdde6a",
+    "file_type": "PE executable",
+    "strings_found": [
+      "!This program cannot be run in DOS mode.",
+      "`;Rich",
+      ".text",
+      "`.rdata",
+      "@.data",
+      ".rsrc",
+      "SVWj",
+      "YYt@",
+      "f97t5",
+      "^VWP"
+    ],
+    "entry_point": "0x7b64",
+    "imports": [
+      "USER32.dll",
+      "SHELL32.dll",
+      "MSVCRT.dll",
+      "KERNEL32.dll"
+    ]
+  },
+  "verdicts": [
+    "High non-ASCII byte ratio"
+  ],
+  "indicators": [
+    {
+      "type": "non_ascii_ratio",
+      "value": 0.51
+    },
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: Hash not found."
+    }
+  ],
+  "threat_score": 10,
+  "classification": "Suspicious"
+}

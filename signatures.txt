@@ -1,0 +1,8 @@
+eval(base64_decode(
+powershell -enc
+cmd.exe /c
+str_rot13
+gzinflate(base64_decode(
+CreateRemoteThread
+VirtualAllocEx
+system("rm -rf /

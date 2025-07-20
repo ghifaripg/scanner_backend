@@ -1,0 +1,36 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Documents\\Uni\\FinPro\\example.exe",
+    "size": 1804192,
+    "md5": "add3ad031f6f9be619c766657933f049",
+    "sha1": "ba1859d5d2f964f4ad2d3f6eeddb2f34b4699a44",
+    "sha256": "10826b503ba6823f14893f0627823017ee1778881222ea9960a7e268739d6956",
+    "file_type": "PE executable",
+    "strings_found": [
+      "This program must be run under Win32",
+      ".text",
+      "`.itext",
+      "`.data",
+      ".bss",
+      ".idata",
+      ".didata",
+      ".edata",
+      "@.tls",
+      ".rdata"
+    ],
+    "entry_point": "0xb5eec",
+    "imports": [
+      "kernel32.dll",
+      "comctl32.dll",
+      "version.dll",
+      "user32.dll",
+      "oleaut32.dll",
+      "netapi32.dll",
+      "advapi32.dll"
+    ]
+  },
+  "verdicts": [],
+  "indicators": [],
+  "threat_score": 0,
+  "classification": "Safe"
+}

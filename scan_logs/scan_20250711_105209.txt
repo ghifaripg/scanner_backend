@@ -1,0 +1,63 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Documents\\Uni\\FinPro\\example.exe",
+    "size": 1804192,
+    "md5": "add3ad031f6f9be619c766657933f049",
+    "sha1": "ba1859d5d2f964f4ad2d3f6eeddb2f34b4699a44",
+    "sha256": "10826b503ba6823f14893f0627823017ee1778881222ea9960a7e268739d6956",
+    "file_type": "PE executable",
+    "strings_found": [
+      "This program must be run under Win32",
+      ".text",
+      "`.itext",
+      "`.data",
+      ".bss",
+      ".idata",
+      ".didata",
+      ".edata",
+      "@.tls",
+      ".rdata"
+    ],
+    "entry_point": "0xb5eec",
+    "imports": [
+      "kernel32.dll",
+      "comctl32.dll",
+      "version.dll",
+      "user32.dll",
+      "oleaut32.dll",
+      "netapi32.dll",
+      "advapi32.dll"
+    ]
+  },
+  "verdicts": [
+    "Suspicious API call: VirtualAlloc",
+    "Suspicious API call: LoadLibrary",
+    "Embedded network indicators found"
+  ],
+  "indicators": [
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: 0 malicious, 0 suspicious, 0 harmless."
+    },
+    {
+      "type": "api",
+      "value": "VirtualAlloc"
+    },
+    {
+      "type": "api",
+      "value": "LoadLibrary"
+    },
+    {
+      "type": "url/ip",
+      "value": [
+        "http://schemas.microsoft.com/SMI/2005/WindowsSettings\">true</dpiAware>",
+        "http://crl.certum.pl/ctnca2.crl0l\u0006\b+\u0006\u0001\u0005\u0005\u0007\u0001\u0001\u0004`0^0(\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001chttp://subca.ocsp-certum.com02\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002&http://repository.certum.pl/ctnca2.cer09\u0006\u0003U\u001d",
+        "http://www.certum.pl/CPS0",
+        "1.0.0.0",
+        "6.0.0.0"
+      ]
+    }
+  ],
+  "threat_score": 30,
+  "classification": "Suspicious"
+}

@@ -1,0 +1,28 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Documents\\Uni\\FinPro\\keygen_crack.exe",
+    "size": 38,
+    "md5": "fc60c13d59a650c787d62375ad241fec",
+    "sha1": "5561a35a524b59154423527b55a06ba4759f2051",
+    "sha256": "1e99655ccd9ee3f30722e89e7eb5c6b3d14955212d85b93a29c7ca70d86662c1",
+    "file_type": "Unknown",
+    "strings_found": [
+      "Test for suspicious filename detection"
+    ]
+  },
+  "verdicts": [
+    "Suspicious filename"
+  ],
+  "indicators": [
+    {
+      "type": "filename",
+      "value": "C:\\Users\\ghifa\\Documents\\Uni\\FinPro\\keygen_crack.exe"
+    },
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: Hash not found."
+    }
+  ],
+  "threat_score": 10,
+  "classification": "Suspicious"
+}

@@ -1,0 +1,56 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Downloads\\Programs\\AutoClicker-3.1.1.exe",
+    "size": 877736,
+    "md5": "9b2946bb3d8ae8d01f3d64fc6dee2c9e",
+    "sha1": "a62be821aeb5667d445fc6710018b3cdce66e417",
+    "sha256": "cd6ba78ea24a28b76160d343d46cfb16df91b123afd9bde2ad234cccd8d82083",
+    "file_type": "PE executable",
+    "strings_found": [
+      "!This program cannot be run in DOS mode.",
+      "Richi",
+      ".text",
+      "`.rdata",
+      "@.data",
+      ".rsrc",
+      "F$S3",
+      "r#;=",
+      "RPWS",
+      "hhHH"
+    ],
+    "entry_point": "0x16310",
+    "imports": [
+      "WSOCK32.dll",
+      "VERSION.dll",
+      "WINMM.dll",
+      "COMCTL32.dll",
+      "MPR.dll",
+      "WININET.dll",
+      "PSAPI.DLL",
+      "USERENV.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "GDI32.dll",
+      "COMDLG32.dll",
+      "ADVAPI32.dll",
+      "SHELL32.dll",
+      "ole32.dll",
+      "OLEAUT32.dll"
+    ]
+  },
+  "verdicts": [
+    "Matched known signature"
+  ],
+  "indicators": [
+    {
+      "type": "signature",
+      "value": "VirtualAllocEx"
+    },
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: 0 malicious, 0 suspicious, 0 harmless."
+    }
+  ],
+  "threat_score": 10,
+  "classification": "Malicious"
+}

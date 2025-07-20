@@ -1,0 +1,65 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Downloads\\idman642build22.exe",
+    "size": 12251688,
+    "md5": "d342739ae85e84dbb6602c388d5a347a",
+    "sha1": "d7969ebf3cca7f1f7480c8d4941adb0ad7fdfe40",
+    "sha256": "8c2d993b89a21b98d3bfdfa425cde853431f1e5e311954456393b218ab5513ce",
+    "file_type": "PE executable",
+    "strings_found": [
+      "!This program cannot be run in DOS mode.",
+      "Rich",
+      ".text",
+      "`.rdata",
+      "@.data",
+      ".rsrc",
+      "@.reloc",
+      "D$@j",
+      "L$4QP",
+      "L$$Q"
+    ],
+    "entry_point": "0x5b7a",
+    "imports": [
+      "ADVAPI32.dll",
+      "USER32.dll",
+      "SHELL32.dll",
+      "KERNEL32.dll"
+    ]
+  },
+  "verdicts": [
+    "High non-ASCII byte ratio",
+    "Suspicious API call: VirtualAlloc",
+    "Suspicious API call: LoadLibrary",
+    "Embedded network indicators found"
+  ],
+  "indicators": [
+    {
+      "type": "non_ascii_ratio",
+      "value": 0.51
+    },
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: 0 malicious, 0 suspicious, 0 harmless."
+    },
+    {
+      "type": "api",
+      "value": "VirtualAlloc"
+    },
+    {
+      "type": "api",
+      "value": "LoadLibrary"
+    },
+    {
+      "type": "url/ip",
+      "value": [
+        "www.digicert.com1!0\u001f\u0006\u0003U\u0004\u0003\u0013\u0018DigiCert",
+        "http://ocsp.digicert.com0A\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\u0006\u0003U\u001d\u001f\u0004<0:08642http://crl3.digicert.com/DigiCertTrustedRootG4.crl0\u001c\u0006\u0003U\u001d",
+        "http://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0SQOMhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0=\u0006\u0003U\u001d",
+        "1.0.0.0",
+        "6.0.0.0"
+      ]
+    }
+  ],
+  "threat_score": 30,
+  "classification": "Safe"
+}

@@ -1,0 +1,73 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Downloads\\hamsterball-demo-installer.exe",
+    "size": 6831467,
+    "md5": "a52c341f23be100b9f5029711093e8cf",
+    "sha1": "d9318c917c71e119c1505521dea88833a61905c6",
+    "sha256": "7cea668e88130102c3bfbb870ef5c624fda3339a98b02402983c761d1397c0b9",
+    "file_type": "PE executable",
+    "strings_found": [
+      "!This program cannot be run in DOS mode.",
+      "-Richm",
+      ".text",
+      "`.rdata",
+      "@.data",
+      ".rsrc",
+      "tIWP",
+      "SHHVW",
+      "_^[d",
+      "Vj\\W"
+    ],
+    "entry_point": "0x179b7",
+    "imports": [
+      "COMCTL32.dll",
+      "VERSION.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "GDI32.dll",
+      "ADVAPI32.dll",
+      "SHELL32.dll",
+      "ole32.dll",
+      "OLEAUT32.dll"
+    ]
+  },
+  "verdicts": [
+    "High non-ASCII byte ratio",
+    "VirusTotal detection: Malicious",
+    "Suspicious API call: VirtualAlloc",
+    "Suspicious API call: ShellExecuteA",
+    "Suspicious API call: LoadLibrary",
+    "Embedded network indicators found"
+  ],
+  "indicators": [
+    {
+      "type": "non_ascii_ratio",
+      "value": 0.52
+    },
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: 2 malicious, 0 suspicious, 0 harmless."
+    },
+    {
+      "type": "api",
+      "value": "VirtualAlloc"
+    },
+    {
+      "type": "api",
+      "value": "ShellExecuteA"
+    },
+    {
+      "type": "api",
+      "value": "LoadLibrary"
+    },
+    {
+      "type": "url/ip",
+      "value": [
+        "http://\u0000</UninstallDelRegKey>\u0000\u0000\u0000",
+        "http://www.microsoft.com/directx\u0000\u0000\u0000\u00008.0\u0000test.cab\u0000\u0000\u0000\u0000\u0006*@\u0000invalid"
+      ]
+    }
+  ],
+  "threat_score": 85,
+  "classification": "Malicious"
+}

@@ -1,0 +1,58 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Downloads\\Create_Installer_ACD_2026_English_WIN64.exe",
+    "size": 30658992,
+    "md5": "e518f180a6296ee92a459e191f009a71",
+    "sha1": "0dd9248d8096de03ae44e89f911f48846443b4a3",
+    "sha256": "9980202732db1734415bed4d4d68a7249d4a9a95c71337234feadff85c98b74d",
+    "file_type": "PE executable",
+    "strings_found": [
+      "!This program cannot be run in DOS mode.",
+      "Rich",
+      ".text",
+      "`.rdata",
+      "@.data",
+      ".sxdata",
+      ".rsrc",
+      "YYhx",
+      "tt8]",
+      "t.9]"
+    ],
+    "entry_point": "0x14b04",
+    "imports": [
+      "OLEAUT32.dll",
+      "USER32.dll",
+      "SHELL32.dll",
+      "KERNEL32.dll"
+    ]
+  },
+  "verdicts": [
+    "Suspicious API call: VirtualAlloc",
+    "Suspicious API call: LoadLibrary",
+    "Embedded network indicators found"
+  ],
+  "indicators": [
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: Hash not found."
+    },
+    {
+      "type": "api",
+      "value": "VirtualAlloc"
+    },
+    {
+      "type": "api",
+      "value": "LoadLibrary"
+    },
+    {
+      "type": "url/ip",
+      "value": [
+        "www.digicert.com1$0\"\u0006\u0003U\u0004\u0003\u0013\u001bDigiCert",
+        "www.digicert.com1!0\u001f\u0006\u0003U\u0004\u0003\u0013\u0018DigiCert",
+        "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\u0006\u0003U\u001d\u001f\u0004>0<0:864http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0\u0011\u0006\u0003U\u001d"
+      ]
+    }
+  ],
+  "threat_score": 30,
+  "classification": "Suspicious"
+}

@@ -1,0 +1,42 @@
+{
+  "file_info": {
+    "path": "C:\\Users\\ghifa\\Documents\\Uni\\FinPro\\fake_upx.exe",
+    "size": 5008,
+    "md5": "3f0ad6124528d46e51cf03ff76384b45",
+    "sha1": "a62d90f57fffb1365ddf4f2e57f9d1cfd1c25b1e",
+    "sha256": "25e8c8e7317427564a22669eeace8d79bd5665a05c565dd3741e2177396f6d7a",
+    "file_type": "Unknown",
+    "strings_found": [
+      "UPX0*/",
+      "|>S@",
+      "Wky__",
+      "\\geC",
+      "n@e{",
+      "}Jut",
+      "hyn~",
+      "J3Ed",
+      "nViD",
+      "d.hY{"
+    ]
+  },
+  "verdicts": [
+    "High file entropy (possible packing/encryption)",
+    "File appears to be UPX-packed"
+  ],
+  "indicators": [
+    {
+      "type": "entropy",
+      "value": 7.96
+    },
+    {
+      "type": "VirusTotal",
+      "value": "VirusTotal: Hash not found."
+    },
+    {
+      "type": "packer",
+      "value": "UPX"
+    }
+  ],
+  "threat_score": 15,
+  "classification": "Safe"
+}
